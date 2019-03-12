@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="filereader:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/filereader_jar</output-path>
+    <root id="archive" name="filereader.jar">
+      <element id="module-output" name="filereader" />
+      <element id="library" level="project" name="servlet-api" />
+    </root>
+  </artifact>
+</component>

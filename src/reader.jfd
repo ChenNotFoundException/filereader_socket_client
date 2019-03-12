@@ -1,0 +1,93 @@
+JFDML JFormDesigner: "6.0.0.0.84" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {comp panel1:::p::p, space ::23:x, par l {seq t {comp scrollPane1:::p:773:p, space :::p}, seq t {comp button4:::p:88:p, space :p:30:p, comp button3:::p:119:p, space :p:95:p}}}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp scrollPane1:::p:437:p, space :::p, par b {comp button3::b::33:x, comp button4::b::33:x}, space :::p}, comp panel1::l:::x}"
+		} ) {
+			name: "this"
+			"resizable": false
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {comp label3::t:::x, comp subscript::t:::x, seq {par l {comp label4::l:p:178:p, par t:l::p {comp button5::l::141:x, comp button1::l::141:x}, comp label5::l:p:172:p, seq l {par t:::p {comp label1:::::x, comp label2:::::x}, space :::p, par l:::p {comp textField1::::130:x, comp ipAddress::t:::x, comp button2::l:p:93:p}}, comp label6::l:p::p}, space :0:0:x}}, space :::p}}"
+				"$verticalGroup": "par l {seq t {space :::p, comp button1:::p:42:p, space :::p, comp button5:::p:42:p, space :p:18:p, comp label4:::p::p, space s:::p, par b {comp label1::b:p::p, comp ipAddress::b:p::p}, space :::p, par b {comp textField1::b:p::p, comp label2::b:p::p}, space s:::p, comp label6:::p::p, space :p:3:p, comp subscript:::p:28:p, space :p:15:p, comp button2:::p:36:p, space :::p, comp label5:::p:47:p, space :::p, comp label3:::p:101:p, space ::18:x}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "读取FTP"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "ipAddress"
+					"text": "192.168.1.1"
+					"enabled": false
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "添加"
+					"enabled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "IP:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "请尽快添加并保存至服务器"
+					"font": new java.awt.Font( "宋体", 1, 16 )
+					"foreground": sfield java.awt.Color red
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "请先读取配置文件"
+					"font": new java.awt.Font( "宋体", 1, 12 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button5"
+					"text": "读取RTSP视频流"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button5ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "倒计时："
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "密码："
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField1"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "输入图片坐标(以空格分割)"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "subscript"
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "textArea1"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "保存配置文件"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "恢复默认"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1020, 520 )
+		} )
+	}
+}
